@@ -24,7 +24,7 @@ O repositório contém diversos exemplos, acessíveis através do documento prin
 - Uso de \<div> e \<span> para formatação de texto e elementos
 - Informações de diversos atributos usados com os elementos acima
 
-  [!NOTE]
+> [!NOTE]
 > Embora mínimos, toda funcionalidade normalmente realizados com CSS, ou Javascript foram feitos através das tags \<style> e \<script> do próprio HTML.
 
 ## Recomendações

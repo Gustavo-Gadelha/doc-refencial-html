@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <!--
+        form: Usado para criar formularos que aceitam entradas, através de "inputs", de informações;
+        usado para agrupar e direcionar informações a funções em Javascript ou outros elementos;
+        
+        atributo "action": especifica onde devem ser direcionadas as informações do formulario;
+        atributo "method": pode ser GET ou POST;
+        GET anexa as informações a url da página, não é considerado seguro;
+    -->
+    <form action="" method="">
+        <!--
+            label: Comunica ao usuario que tipo de informação deve ser digitada
+            
+            atributo "for": recebe o id de um input. Ao clicar no texto do "label", direciona ao input com o id fornecido;
+            não é obrigatorio, mas é considerado boa pratica utiliza-lo;
+        
+            input: Usado para pedir informações para o usuário;
+            Pode ser dos tipos:
+                button (butão);
+                checkbox (caixa de marcação);
+                color (cor);
+                date (data);
+                email (email);
+                file (arquivo);
+                image (imagem);
+                month (mes);
+                number (numero);
+                password (senha);
+                text (texto);
+                time (hora);
+                url (url);
+                tel (número de telefone);
+                quantity (quantidade);
+                submit (botão para enviar os dados ao formulario);
+                reset (botão para resetar os dados digitados);
+                entre outros;
+
+            atributo "id": usado para diferenciar os inputs;
+            atributo "nome": nome da variavel onde sera guardada a informação;
+            atributo "placeholder": Opcional, exemplo do que deve ser digitado no input
+            atributo "required": Torna obrigatorio preenche o campo antes de enviar
+        -->
+
+        <div>
+            <!--
+                tipo "text": permite ao usuario digitar texto;
+            -->
+            <label for="pnome">Primeiro nome: </label>
+            <input type="text" name="pnome" id="pnome" placeholder="Nome" required>
+        </div><br>
+            
+        <div>   
+            <!--
+                tipo "text": permite ao usuario digitar texto;
+            -->
+            <label for="snome">Sobrenome: </label>
+            <input type="text" name="snome" id="snome" placeholder="Sobrenome" required>    
+        </div><br>
+
+        <div>
+            <!--
+                tipo "password": esconde todo caractere digitado pelo usuario;
+            -->
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>    
+        </div><br>
+
+        <div>
+            <!--
+                tipo "date": permite ao usuario selecionar uma data;
+            -->
+            <label for="dataDeNascimento">Data de nascimento: </label>
+            <input type="date" name="dataDeNascimento" id="dataDeNascimento" placeholder="dataDeNascimento" required>    
+        </div><br>
+
+        <div>
+            <!--
+                tipo "radio": Botões radiais que são associados pelo atributo "nome";
+                apenas 1 dos inputs associados pode ser selecionado;
+
+                atributo "value": define o verdadeiro valor(retorno) daquela opção; 
+            -->
+            <label for="genero">Genero: </label>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="genero" id="mas" value="Masculino" required>
+            
+            <label for="fem">Feminino</label>
+            <input type="radio" name="genero" id="fem" value="Feminino" required>
+        </div><br>
+
+        <div>
+            <!--
+                select: permite ao usuario selecionar opções pre-definidas;
+                option: define o tipo as opções que podem ser selecionadas;
+
+                atributo "value": define o verdadeiro valor(retorno) da opção; 
+            -->
+            <label for="pagamento">Pagamento: </label>
+            <select name="pagamento" id="pagamento">
+                <option value="Pix">Pix</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Caixa">Caixa</option>
+                <option value="Nubank">Nubank</option>
+                <option value="Visa">Visa</option>
+            </select>
+        </div><br>
+
+        <div>
+            <!--
+                select: permite ao usuario marcar uma caixa;
+            -->
+            <label for="termos">Aceitar termos do contrato: </label>
+            <input type="checkbox" name="termos" id="termos">
+        </div><br>
+
+        <div>
+             <!--
+                tipo "reset": reseta as informações digitadas; 
+            -->
+            <input type="reset">    
+        </div><br>
+
+        <div>
+             <!--
+                tipo "submit": envia as informações ao formulario; 
+            -->
+            <input type="submit">    
+        </div><br>
+
+        <!--
+            Separar "labels" e "inputs" em "divs" ajuda a associar um label a um atributo e separa-lo dos outros inputs;
+            Não é obrigatorio e depende inteiramente da decisão do programador;
+        -->
+            
+    </form>  
+
+    <p><a href="/index.html">Voltar</a></p>
+
+</body>
+</html>

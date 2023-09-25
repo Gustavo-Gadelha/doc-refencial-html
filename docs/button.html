@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function habilitarbt(){
+            document.getElementById("bt2").removeAttribute("disabled");
+            document.getElementById("bt2").innerHTML = "Obrigado :)";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+</head>
+
+<body>
+
+    <!--
+        Qualquer texto entre a tag <button> aparecerar no Butão
+    -->
+
+    <h4>Botão em HTML</h4>
+    <button >Botão sem link</button>
+
+    <!--
+        aatributo "disabled": valor booleano, desabilita o botão;
+        é normalmente usado em conjunto com javascript;
+    -->
+
+    <h4>Botões desablitados e Botões com javascript</h4>
+    <button id="bt2" disabled>Estou desabilitado :(</button>
+
+    <!--
+        atributo "onclick": recebe o nome de uma função, que ao ser clicado executa a função
+    -->
+    <button onclick="habilitarbt()">Habilitar botão</button>
+
+    <!--
+        Botões com uso do atributo "style"
+    -->
+    <h4>Botões também podem ser estilizados</h4>
+    <button style="border-radius: 5px; background-color: black ;color: #00ff00;">Botão estilizado</button>
+
+    <h4>Voltar:</h4>
+    <a href="/index.html">
+        <button>Clique aqui</button>
+    </a>
+
+</body>
+</html>

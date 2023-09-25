@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+</head>
+
+<body>
+    <!--
+        controls: adiciona controles ao arquivo;
+        autoplay: começa automaticamente ao entrar na pagina;
+        loop: começa de novo quando acaba;
+        muted: o audio começa sem som;
+    --> 
+    <h4>Audio em HTML</h4>
+    <audio controls autoplay muted src="/audio/file_example_MP3_700KB.mp3"></audio><br>   
+
+    <!--
+        multiplos caminhos e arquivos de audio
+        prioridade: do topo para baixo
+        exibe uma mensagem caso nenhum dos caminhos seja suportado
+    -->
+    <h4>Audio em HTML</h4>
+    <audio controls>
+        <source src="/audio/file_example_MP3_700KB.mp3">
+        <source src="/audio/file_example_MP3_700KB.wav">
+        Seu navegador não tem suporte para arquivos .mp3 e .wav
+    </audio><br>
+
+    <p><a href="/index.html">Voltar</a></p>
+</body>
+</html>

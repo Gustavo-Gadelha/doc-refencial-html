@@ -23,3 +23,11 @@ O repositório contém diversos exemplos, acessíveis através do documento prin
 - Diferentes tipos de \<form> com exemplos
 - Uso de \<div> e \<span> para formatação de texto e elementos
 - Informações de diversos atributos usados com os elementos acima
+
+  [!NOTE]
+> Embora mínimos, toda funcionalidade normalmente realizados com CSS, ou Javascript foram feitos através das tags \<style> e \<script> do próprio HTML.
+
+## Recomendações
+É recomendado que o usuário faça o download do repositório para visualizar o documento, também é recomendado que o documento seja visualizado tanto através da IDE quanto do navegador.
+
+É incentivado que o usuário faça mudanças e alterações no documento para observar como a linguagem reage.
